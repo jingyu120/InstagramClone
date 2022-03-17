@@ -20,6 +20,7 @@ const Header = () => {
             src="https://links.papareact.com/ocw"
             layout="fill"
             objectFit="contain"
+            priority={true}
           />
         </div>
         <div className="relative h-10 w-10 flex-shrink-0 cursor-pointer lg:hidden">

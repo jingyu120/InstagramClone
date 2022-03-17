@@ -12,7 +12,7 @@ const Stories = () => {
     setSuggestions(suggestions)
   }, [])
   return (
-    <div className="mt-8 flex space-x-2 overflow-x-scroll rounded-sm border border-gray-200 bg-white p-6">
+    <div className="border-gray-20 mt-8 flex space-x-2 overflow-x-scroll rounded-sm border bg-white p-6 scrollbar-thin scrollbar-thumb-black">
       {suggestions &&
         suggestions.map(
           (profile: { id: number; avatar: string; username: string }) => (
