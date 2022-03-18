@@ -10,8 +10,11 @@ import {
 } from '@heroicons/react/outline'
 
 import { HomeIcon } from '@heroicons/react/solid'
+import { useSession } from 'next-auth/react'
 
 const Header = () => {
+  const { data: session, status } = useSession()
+  console.log(session)
   return (
     <div className="sticky top-0 z-50 mx-5 flex max-w-6xl items-center justify-between border-b bg-white shadow-sm xl:mx-auto">
       <div>
@@ -57,7 +60,7 @@ const Header = () => {
         <MenuIcon className="h-6 cursor-pointer md:hidden" />
         <img
           className="h-10 cursor-pointer rounded-full"
-          src="https://links.papareact.com/3ke"
+          src={session?.user?.image}
           alt="profile pic"
         />
       </div>

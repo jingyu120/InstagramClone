@@ -15,6 +15,14 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/api/[...nextauth].tsx",
+    "firebase.js",
+    "pages/auth/signin.js",
+    "pages/auth/signin.js"
+  ],
   "exclude": ["node_modules"]
 }
